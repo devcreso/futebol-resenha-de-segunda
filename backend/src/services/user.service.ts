@@ -9,7 +9,7 @@ export const getUserById = (id: string) =>
 export const updateUser = (id: string, data: any) =>
     prisma.user.update({ where: { id }, data });
 
-export const updateUserStatus = (id: string, status: string) => {
+export const status = (id: string, status: string) => {
     // Validação simples e conversão para enum
     if (!Object.values(Status).includes(status as Status)) {
         throw new Error('Status inválido');
