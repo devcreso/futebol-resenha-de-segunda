@@ -15,7 +15,7 @@ model User {
   email       String   @unique
   password    String
   position    Position
-  status      Status
+  status      Status   @default(MENSALISTA)
   isAdmin     Boolean  @default(false)
   approved    Boolean  @default(false)
 
