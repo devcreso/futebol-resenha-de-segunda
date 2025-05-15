@@ -1,5 +1,5 @@
 import { PrismaClient, Status } from '@prisma/client';
-import prisma from '../../prisma/client';
+import prisma from '../prisma/client';
 
 export const getAllUsers = () => prisma.user.findMany();
 
